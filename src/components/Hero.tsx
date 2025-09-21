@@ -25,7 +25,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-8 animate-fade-in-up">
             Привет! Меня зовут{' '}
             <span className="bg-gradient-primary bg-clip-text text-transparent relative">
-              Альберт
+              Ярослав
               <div className="absolute -inset-1 bg-gradient-primary opacity-20 blur-xl animate-glow-pulse"></div>
             </span>
             ,<br />
