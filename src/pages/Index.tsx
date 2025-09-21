@@ -1,25 +1,21 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import HowToOrder from '@/components/HowToOrder';
-import ProductGallery from '@/components/ProductGallery';
-import About from '@/components/About';
-import Reviews from '@/components/Reviews';
-import OrderForm from '@/components/OrderForm';
-import Footer from '@/components/Footer';
+import RestaurantHeader from '@/components/RestaurantHeader';
+import RestaurantHero from '@/components/RestaurantHero';
+import RestaurantAbout from '@/components/RestaurantAbout';
+import RestaurantMenu from '@/components/RestaurantMenu';
+import RestaurantEvents from '@/components/RestaurantEvents';
+import RestaurantContacts from '@/components/RestaurantContacts';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <RestaurantHeader />
       <main>
-        <Hero />
-        <HowToOrder />
-        <ProductGallery />
-        <About />
-        <Reviews />
-        <OrderForm />
+        <RestaurantHero />
+        <RestaurantAbout />
+        <RestaurantMenu />
+        <RestaurantEvents />
+        <RestaurantContacts />
       </main>
-      <Footer />
     </div>
   );
 };

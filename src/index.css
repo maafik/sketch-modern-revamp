@@ -4,60 +4,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern design system for automotive covers store */
+/* Brutal restaurant design system with fire effects */
 
 @layer base {
   :root {
-    /* Modern dark automotive theme */
-    --background: 225 25% 7%;
-    --foreground: 210 20% 98%;
+    /* Dark brutal restaurant theme */
+    --background: 0 0% 8%;
+    --foreground: 30 20% 98%;
 
-    --card: 225 20% 12%;
-    --card-foreground: 210 20% 98%;
+    --card: 0 0% 12%;
+    --card-foreground: 30 20% 98%;
 
-    --popover: 225 20% 12%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 30 20% 98%;
 
-    /* Luxury automotive purple accent */
-    --primary: 270 70% 55%;
-    --primary-foreground: 210 20% 98%;
-    --primary-glow: 270 80% 65%;
+    /* Fire red primary */
+    --primary: 14 100% 57%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 14 100% 67%;
 
-    /* Sophisticated secondary */
-    --secondary: 225 15% 18%;
-    --secondary-foreground: 210 20% 98%;
+    /* Coal black secondary */
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 30 20% 98%;
 
-    --muted: 225 15% 15%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 30 15% 65%;
 
-    /* Automotive teal accent */
-    --accent: 180 60% 45%;
-    --accent-foreground: 210 20% 98%;
-    --accent-glow: 180 70% 55%;
+    /* Golden accent */
+    --accent: 45 100% 51%;
+    --accent-foreground: 0 0% 10%;
+    --accent-glow: 45 100% 61%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 225 15% 20%;
-    --input: 225 15% 18%;
-    --ring: 270 70% 55%;
+    --border: 0 0% 25%;
+    --input: 0 0% 18%;
+    --ring: 14 100% 57%;
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(225 25% 7% / 0.9), hsl(270 70% 55% / 0.1));
-    --gradient-card: linear-gradient(135deg, hsl(225 20% 12% / 0.8), hsl(225 20% 15% / 0.9));
+    /* Fire gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(14 100% 57%), hsl(25 100% 67%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 51%), hsl(14 100% 57%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 8% / 0.95), hsl(14 100% 57% / 0.2));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 12% / 0.9), hsl(14 100% 57% / 0.1));
+    --gradient-fire: linear-gradient(45deg, hsl(14 100% 57%), hsl(25 100% 67%), hsl(45 100% 51%));
 
-    /* Glass morphism */
-    --glass-primary: rgba(255, 255, 255, 0.05);
-    --glass-secondary: rgba(255, 255, 255, 0.1);
+    /* Glass morphism with fire */
+    --glass-primary: rgba(255, 87, 34, 0.1);
+    --glass-secondary: rgba(255, 193, 7, 0.15);
 
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(225 25% 7% / 0.5);
-    --shadow-hover: 0 20px 60px -10px hsl(270 70% 55% / 0.3);
+    /* Fire shadows */
+    --shadow-glow: 0 0 50px hsl(14 100% 57% / 0.4);
+    --shadow-card: 0 15px 35px -10px hsl(0 0% 0% / 0.6);
+    --shadow-hover: 0 25px 70px -10px hsl(14 100% 57% / 0.4);
+    --shadow-fire: 0 0 30px hsl(14 100% 57% / 0.6), 0 0 60px hsl(25 100% 67% / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,9 +88,10 @@
   body {
     @apply bg-background text-foreground font-inter;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(270 70% 55% / 0.08) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(180 60% 45% / 0.06) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(270 70% 55% / 0.04) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(14 100% 57% / 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(45 100% 51% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(14 100% 57% / 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 60% 30%, hsl(25 100% 67% / 0.04) 0%, transparent 50%);
   }
 
   html {
@@ -107,5 +110,21 @@
   
   .text-gradient {
     @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .fire-effect {
+    @apply shadow-fire animate-glow-pulse;
+  }
+
+  .brutal-card {
+    @apply bg-gradient-card backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300;
+  }
+
+  .fire-text {
+    background: var(--gradient-fire);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px hsl(14 100% 57% / 0.5);
   }
 }
