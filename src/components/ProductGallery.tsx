@@ -57,13 +57,13 @@ const ProductGallery = () => {
 
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 bg-gradient-secondary bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 text-gradient">
             Наши накидки
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Каждая накидка создана с любовью и вниманием к деталям. Выберите свой стиль.
           </p>
-          <div className="w-24 h-1 bg-gradient-secondary mx-auto mt-6 rounded-full"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mt-6 rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -73,7 +73,7 @@ const ProductGallery = () => {
               className={`group relative animate-fade-in-up`}
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="bg-gradient-card backdrop-blur-glass border border-border/50 rounded-3xl overflow-hidden hover:shadow-hover transition-all duration-500 hover:-translate-y-2 hover:border-accent/50">
+              <div className="glass-card rounded-2xl overflow-hidden hover-glow hover:-translate-y-1 hover:border-primary/30">
                 {/* Image Container */}
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img 
@@ -84,7 +84,7 @@ const ProductGallery = () => {
                   />
                   
                   {/* Overlay on Hover */}
-                  <div className="absolute inset-0 bg-gradient-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <Dialog>
                       <DialogTrigger asChild>
                         <Button 
@@ -95,9 +95,9 @@ const ProductGallery = () => {
                           Подробнее
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="bg-gradient-card backdrop-blur-glass border border-border/50 max-w-md">
+                      <DialogContent className="glass-card max-w-md">
                         <DialogHeader>
-                          <DialogTitle className="text-2xl font-playfair bg-gradient-primary bg-clip-text text-transparent">
+                          <DialogTitle className="text-2xl font-playfair text-gradient">
                             {selectedProduct?.name}
                           </DialogTitle>
                         </DialogHeader>
@@ -121,7 +121,7 @@ const ProductGallery = () => {
                             </p>
                             <Button 
                               onClick={() => handleOrder(selectedProduct)}
-                              className="w-full bg-gradient-primary text-primary-foreground border-0 hover:shadow-glow transition-all duration-300"
+                              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-glow transition-all duration-300"
                             >
                               Заказать в WhatsApp
                             </Button>
@@ -151,7 +151,7 @@ const ProductGallery = () => {
 
                   <Button 
                     onClick={() => handleOrder(product)}
-                    className="w-full bg-gradient-primary text-primary-foreground border-0 hover:shadow-glow hover:scale-105 transition-all duration-300"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground hover:shadow-glow hover:scale-105 transition-all duration-300"
                   >
                     Заказать
                   </Button>

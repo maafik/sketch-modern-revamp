@@ -86,9 +86,9 @@
   body {
     @apply bg-background text-foreground font-inter;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(270 70% 55% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(180 60% 45% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(270 70% 55% / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(270 70% 55% / 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(180 60% 45% / 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(270 70% 55% / 0.04) 0%, transparent 50%);
   }
 
   html {
@@ -96,12 +96,16 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-glass bg-card/80 border border-border/20;
   }
-
-  body {
-    @apply bg-background text-foreground;
+  
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow hover:scale-[1.02];
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
   }
 }
