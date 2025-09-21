@@ -45,7 +45,7 @@ const About = () => {
 
               <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
                 <p>
-                  Меня зовут <span className="text-accent font-semibold">Ярослав</span>, и уже более 3 лет я помогаю автовладельцам 
+                  Меня зовут <span className="text-accent font-semibold">Ирина</span>, и уже более 3 лет я помогаю автовладельцам 
                   создавать стильный и комфортный интерьер в своих автомобилях.
                 </p>
                 
