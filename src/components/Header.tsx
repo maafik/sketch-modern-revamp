@@ -24,7 +24,7 @@ const Header = () => {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-playfair font-bold text-gradient">
+          <div className="text-2xl font-playfair font-bold bg-gradient-primary bg-clip-text text-transparent">
             Sketch Master
           </div>
           
@@ -57,7 +57,8 @@ const Header = () => {
 
           <Button 
             onClick={() => scrollToSection('order')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground border-0 hover:shadow-glow transition-all duration-300 rounded-xl"
+            variant="outline"
+            className="bg-gradient-primary text-primary-foreground border-0 hover:shadow-glow transition-all duration-300"
           >
             Заказать
           </Button>

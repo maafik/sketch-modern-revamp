@@ -22,17 +22,18 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-8 animate-fade-in-up leading-tight">
+          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-8 animate-fade-in-up">
             Привет! Меня зовут{' '}
-            <span className="text-gradient relative inline-block">
-              Ирина
+            <span className="bg-gradient-primary bg-clip-text text-transparent relative">
+              Ярослав
+              <div className="absolute -inset-1 bg-gradient-primary opacity-20 blur-xl animate-glow-pulse"></div>
             </span>
             ,<br />
             и я создаю автонакидки с душой.
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in-up [animation-delay:0.3s]">
+          <p className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up [animation-delay:0.3s]">
             Я помогаю сделать интерьер автомобиля стильным и комфортным. Мои{' '}
             <span className="text-accent font-semibold">универсальные льняные накидки</span>{' '}
             не только защищают сиденья, но и придают салону особый характер. 
@@ -43,7 +44,7 @@ const Hero = () => {
           <Button 
             onClick={scrollToOrder}
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground border-0 hover:shadow-glow hover:scale-105 transition-all duration-300 text-lg px-8 py-4 rounded-xl animate-bounce-in [animation-delay:0.6s]"
+            className="bg-gradient-primary text-primary-foreground border-0 hover:shadow-hover hover:scale-105 transition-all duration-300 text-lg px-12 py-6 animate-bounce-in [animation-delay:0.6s]"
           >
             Сделать заказ
           </Button>

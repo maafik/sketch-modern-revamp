@@ -59,7 +59,6 @@ export default {
         'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
-        'gradient-fire': 'var(--gradient-fire)',
       },
       backdropBlur: {
         'glass': '20px',
@@ -68,7 +67,6 @@ export default {
         'glow': 'var(--shadow-glow)',
         'card': 'var(--shadow-card)',
         'hover': 'var(--shadow-hover)',
-        'fire': 'var(--shadow-fire)',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -117,16 +115,6 @@ export default {
         "shimmer": {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" }
-        },
-        "fire-flicker": {
-          "0%, 100%": { opacity: "1", transform: "scale(1)" },
-          "25%": { opacity: "0.8", transform: "scale(1.05)" },
-          "50%": { opacity: "0.9", transform: "scale(0.95)" },
-          "75%": { opacity: "0.85", transform: "scale(1.02)" }
-        },
-        "ember-rise": {
-          "0%": { transform: "translateY(0) scale(1)", opacity: "1" },
-          "100%": { transform: "translateY(-100px) scale(0)", opacity: "0" }
         }
       },
       animation: {
@@ -140,8 +128,6 @@ export default {
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         "float": "float 3s ease-in-out infinite",
         "shimmer": "shimmer 2s linear infinite",
-        "fire-flicker": "fire-flicker 3s ease-in-out infinite",
-        "ember-rise": "ember-rise 4s linear infinite",
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
