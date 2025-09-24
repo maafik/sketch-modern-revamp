@@ -18,7 +18,7 @@ const ProductGallery = () => {
     {
       id: 1,
       name: "Накидка чёрный/синий",
-      image: "/src/assets/seats/7666670075.webp",
+      image: "https://sketch-master.store/assets/img/gallery-5/gallery-1.webp",
       colors: ["Чёрный", "Синий"],
         description: "Элегантное сочетание черного и синего цветов для стильного интерьера",
         price: 1999
@@ -26,7 +26,7 @@ const ProductGallery = () => {
     {
       id: 2,
       name: "Накидка чёрный/красный",
-      image: "/src/assets/role/7343275804.webp",
+      image: "https://sketch-master.store/assets/img/gallery-5/gallery-2.webp",
       colors: ["Чёрный", "Красный"],
         description: "Динамичное сочетание черного и красного для спортивного образа",
         price: 1999
@@ -34,7 +34,7 @@ const ProductGallery = () => {
     {
       id: 3,
       name: "Накидка чёрная",
-      image: "/src/assets/seats/7666669193.webp",
+      image: "https://sketch-master.store/assets/img/gallery-5/gallery-3.webp",
       colors: ["Чёрный"],
         description: "Классическая черная накидка - универсальное решение",
         price: 1999
@@ -42,7 +42,7 @@ const ProductGallery = () => {
     {
       id: 4,
       name: "Накидка серая",
-      image: "/src/assets/seats/7666671249.webp",
+      image: "https://sketch-master.store/assets/img/gallery-5/gallery-4.webp",
       colors: ["Серый"],
         description: "Стильная серая накидка для элегантного интерьера",
         price: 1999
@@ -50,7 +50,7 @@ const ProductGallery = () => {
     {
       id: 5,
       name: "Накидка бежевая",
-      image: "/src/assets/seats/7666670487.webp",
+      image: "https://sketch-master.store/assets/img/gallery-5/gallery-5.webp",
       colors: ["Бежевый"],
         description: "Теплая бежевая накидка для уютного салона",
         price: 1999
