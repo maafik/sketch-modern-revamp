@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Reviews from '@/components/Reviews';
 import OrderForm from '@/components/OrderForm';
 import Footer from '@/components/Footer';
+import Cart from '@/components/Cart';
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <OrderForm />
       </main>
       <Footer />
+      <Cart />
     </div>
   );
 };

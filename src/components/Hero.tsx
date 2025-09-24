@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-car-interior.jpg';
+import heroVideo from '@/assets/123123.mp4';
 
 const Hero = () => {
   const scrollToOrder = () => {
@@ -8,13 +8,28 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroImage} 
-          alt="Luxury car interior with elegant seat covers"
-          className="w-full h-full object-cover"
+      {/* Background Video with Overlay */}
+      <div className="absolute inset-0 z-0 bg-black">
+        {/* Blurred fill layer for side bands */}
+        <video
+          src={heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover scale-110 blur-lg"
         />
+        {/* Centered, sharp main video without stretching */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <video
+            src={heroVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="h-full w-auto max-w-none object-contain"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>
 
@@ -24,7 +39,7 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-8 animate-fade-in-up">
             Привет! Меня зовут{' '}
-            <span className="bg-gradient-primary bg-clip-text text-transparent relative">
+            <span className="bg-gradient-primary bg-clip-text text-transparent relative drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
               Ирина
               <div className="absolute -inset-1 bg-gradient-primary opacity-20 blur-xl animate-glow-pulse"></div>
             </span>

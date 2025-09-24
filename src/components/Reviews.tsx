@@ -5,7 +5,7 @@ const Reviews = () => {
     {
       id: 1,
       image: "https://sketch-master.store/assets/img/gallery-5/pavlovsk.jpg",
-      author: "Анна К.",
+      author: "Иван",
       rating: 5,
       text: "Отличные накидки! Качество превосходное, сидят как влитые. Ирина очень внимательно отнеслась к моим пожеланиям.",
       car: "Toyota Camry"
@@ -13,7 +13,7 @@ const Reviews = () => {
     {
       id: 2,
       image: "https://sketch-master.store/assets/img/gallery-5/pavlovsk1.jpg",
-      author: "Михаил С.",
+      author: "Дмитрий",
       rating: 5,
       text: "Заказывал накидки для своего BMW. Результат превзошел ожидания! Салон преобразился, стал намного стильнее.",
       car: "BMW X5"
@@ -21,7 +21,7 @@ const Reviews = () => {
     {
       id: 3,
       image: "https://sketch-master.store/assets/img/gallery-5/pavlovsk2.jpg",
-      author: "Елена Д.",
+      author: "Данилов",
       rating: 5,
       text: "Очень довольна покупкой! Накидки не только красивые, но и практичные. Легко стираются и быстро сохнут.",
       car: "Hyundai Tucson"
@@ -29,7 +29,7 @@ const Reviews = () => {
     {
       id: 4,
       image: "https://sketch-master.store/assets/img/gallery-5/pavlovsk3.jpg",
-      author: "Александр М.",
+      author: "Игорь",
       rating: 5,
       text: "Рекомендую всем! Быстрая доставка, отличное качество. Накидки смотрятся дорого и благородно.",
       car: "Volkswagen Polo"
@@ -37,7 +37,7 @@ const Reviews = () => {
     {
       id: 5,
       image: "https://sketch-master.store/assets/img/gallery-5/pavlovsk4.jpg",
-      author: "Татьяна В.",
+      author: "Петя",
       rating: 5,
       text: "Прекрасная работа! Накидки идеально подошли к интерьеру моего автомобиля. Спасибо Ирине за профессионализм!",
       car: "Kia Rio"
@@ -84,11 +84,11 @@ const Reviews = () => {
             >
               <div className="bg-gradient-card backdrop-blur-glass border border-border/50 rounded-3xl p-6 hover:shadow-hover transition-all duration-500 hover:-translate-y-2 hover:border-accent/50 h-full">
                 {/* Review Image */}
-                <div className="relative mb-6 overflow-hidden rounded-2xl aspect-[4/3]">
+                <div className="relative mb-6 overflow-hidden rounded-2xl aspect-[4/3] bg-black/10">
                   <img 
                     src={review.image}
                     alt={`Отзыв от ${review.author}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>

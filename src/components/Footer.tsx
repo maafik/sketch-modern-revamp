@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="pt-8 border-t border-border/30">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground text-center md:text-left">
-                © 2024 Sketch Master Store. Все права защищены.
+                © 2025 Sketch Master Store. Все права защищены.
               </p>
               
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
