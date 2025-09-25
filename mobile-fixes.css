@@ -26,12 +26,35 @@
     bottom: 100px !important;
   }
   
+  /* Поднимаем кнопку "Сделать заказ" в hero секции выше */
+  #hero button[class*="bg-gradient-primary"],
+  #hero .animate-bounce-in {
+    margin-top: -20px !important;
+  }
+  
+  /* Альтернативный селектор для кнопки */
+  section[id="hero"] button {
+    margin-top: -20px !important;
+  }
+  
   /* Общие селекторы для больших заголовков */
   .text-5xl.md\\:text-7xl,
   .text-6xl,
   .text-5xl,
   .text-4xl {
     padding-top: 10px !important;
+  }
+  
+  /* Центрируем форму заказа */
+  #order .max-w-6xl {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* Дополнительное центрирование для формы */
+  section[id="order"] .container {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 
@@ -58,5 +81,23 @@
   /* Отступ для анимации мышки на маленьких экранах */
   .absolute.bottom-8 {
     bottom: 120px !important;
+  }
+  
+  /* Поднимаем кнопку "Сделать заказ" в hero секции выше на маленьких экранах */
+  #hero button[class*="bg-gradient-primary"],
+  #hero .animate-bounce-in,
+  section[id="hero"] button {
+    margin-top: -30px !important;
+  }
+  
+  /* Центрируем форму заказа на маленьких экранах */
+  #order .max-w-6xl {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  section[id="order"] .container {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
