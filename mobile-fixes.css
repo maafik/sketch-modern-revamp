@@ -1,0 +1,52 @@
+/* Исправление для мобильных устройств - отступ от шапки */
+@media (max-width: 768px) {
+  /* Основное исправление для hero секции */
+  #hero {
+    padding-top: 80px !important;
+  }
+  
+  /* Дополнительные селекторы для hero контента */
+  section[class*="min-h-screen"] {
+    padding-top: 80px !important;
+  }
+  
+  /* Исправление для заголовка с текстом "Привет! Меня зовут Ирина" */
+  h1[class*="text-5xl"],
+  h1[class*="font-playfair"] {
+    margin-top: 60px !important;
+  }
+  
+  /* Дополнительный отступ для контейнера с hero контентом */
+  .max-w-4xl.mx-auto.text-center {
+    margin-top: 60px !important;
+  }
+  
+  /* Общие селекторы для больших заголовков */
+  .text-5xl.md\\:text-7xl,
+  .text-6xl,
+  .text-5xl,
+  .text-4xl {
+    padding-top: 20px !important;
+  }
+}
+
+/* Дополнительные исправления для очень маленьких экранов */
+@media (max-width: 480px) {
+  /* Увеличиваем отступ для очень маленьких экранов */
+  #hero {
+    padding-top: 100px !important;
+  }
+  
+  section[class*="min-h-screen"] {
+    padding-top: 100px !important;
+  }
+  
+  h1[class*="text-5xl"],
+  h1[class*="font-playfair"] {
+    margin-top: 80px !important;
+  }
+  
+  .max-w-4xl.mx-auto.text-center {
+    margin-top: 80px !important;
+  }
+}
